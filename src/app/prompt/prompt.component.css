@@ -22,3 +22,7 @@ textarea {
   padding: 5px;
   font-size: small;
 }
+
+input{
+  margin-left: 10px;
+}

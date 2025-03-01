@@ -15,20 +15,21 @@ export class PromptComponent {
 
   prompt = '';
   response = '';
+  schnoe_api_key = '';
 
   generateResponse() {
-    this.response = this.prompt;
-    this.prompt = '';
+    // this.response = this.prompt;
+    // this.prompt = '';
 
-    // this.promoptService.time().subscribe(
-    //   (response: any) => {
-    //     console.log(response);
-    //     this.response = response;
-    //   },
-    //   (error: HttpErrorResponse) => {
-    //     console.log(error.message);
-    //   }
-    // );
+    this.promoptService.time(this.schnoe_api_key).subscribe(
+      (response: any) => {
+        console.log(response);
+        this.response = response;
+      },
+      (error: HttpErrorResponse) => {
+        console.log(error.message);
+      }
+    );
   }
 
 }

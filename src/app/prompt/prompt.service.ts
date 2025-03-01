@@ -4,12 +4,13 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class PromptService {
-  private apiServerUrl = '';
+  //private apiServerUrl = 'http://localhost:8080';
+  private apiServerUrl = 'https://schnoeschnoe-be.onrender.com';
 
   constructor(private http: HttpClient) {}
 
-  public time(): Observable<any> {
-    let headers = new HttpHeaders().set('X-API-KEY', '');
+  public time(schnoe_api_key: string): Observable<any> {
+    let headers = new HttpHeaders().set('X-API-KEY', schnoe_api_key);
 
     return this.http.get(
       `${this.apiServerUrl}/time`, 

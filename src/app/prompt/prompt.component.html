@@ -2,6 +2,7 @@
     <div class="card">
       <textarea [(ngModel)]="prompt" placeholder="Enter your prompt here"></textarea>
       <button (click)="generateResponse()">Generate Response</button>
+      <input type="text" [(ngModel)]="schnoe_api_key" />
     </div>
     <div class="card">
       Response:
