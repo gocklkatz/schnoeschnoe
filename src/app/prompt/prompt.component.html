@@ -1,0 +1,12 @@
+<section>
+    <div class="card">
+      <textarea [(ngModel)]="prompt" placeholder="Enter your prompt here"></textarea>
+      <button (click)="generateResponse()">Generate Response</button>
+    </div>
+    <div class="card">
+      Response:
+      <div class="response">
+        {{ response }}
+      </div>
+    </div>
+  </section>

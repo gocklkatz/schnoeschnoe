@@ -1,0 +1,33 @@
+
+header {
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    border: .5px solid #9f86c0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #9f86c0;
+    padding: .5em;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li{
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #5e548e;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #231942;
+    cursor: pointer;
+  }
+  
